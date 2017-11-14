@@ -38,7 +38,7 @@ int main()
 	}
 	else /* father read */
 	{
-		wait(NULL);
+		wait(NULL);/* wait until child exit */
 		/* shmat */
 		addr = shmat(shmid, NULL, 0);
 		if(addr == (void *)-1)
